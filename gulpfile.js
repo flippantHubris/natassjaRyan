@@ -31,3 +31,11 @@ gulp.task('default', function() {
 gulp.task('clean', function(done) {
   rimraf('dist', done);
 });
+
+//copy fonts to dist
+gulp.task('fonts', function() {
+  return gulp.src([
+    'src/assets/fonts/**/*'
+  ])
+    .pipe(gulp.dest('dist/fonts/'));
+});
