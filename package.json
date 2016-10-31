@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/flippantHubris/natassjaRyan#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "rimraf": "^2.5.4"
   }
 }
