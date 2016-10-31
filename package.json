@@ -1,0 +1,27 @@
+{
+  "name": "natassjaryan",
+  "version": "1.0.0",
+  "description": "www.natassjaryan.com",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flippantHubris/natassjaRyan.git"
+  },
+  "keywords": [
+    "natassja",
+    "ryan",
+    "natassjaryan"
+  ],
+  "author": "Shane Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flippantHubris/natassjaRyan/issues"
+  },
+  "homepage": "https://github.com/flippantHubris/natassjaRyan#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
