@@ -2,6 +2,8 @@
 
 var gulp = require('gulp');
 
+var rimraf = require('rimraf');
+
 
 // Port to use for the development server.
 var PORT = 8000;
