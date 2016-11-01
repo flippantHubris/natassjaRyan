@@ -3,6 +3,8 @@
 var gulp = require('gulp');
 
 var rimraf = require('rimraf');
+var sequence = require('run-sequence');
+var browser  = require('browser-sync');
 
 var $ = require('gulp-load-plugins')();
 
@@ -19,17 +21,16 @@ var PATHS = {
     'src/assets/scss/**/*.scss'
   ],
   javascript: [
-    'src/assets/js/**/*.js',
-    'src/assets/js/*.js'
+    'src/scripts/*.js'
   ]
 
 };
 
 
-gulp.task('default', function() {
-  // place code for your default task here
-});
 
+gulp.task('build', function(done) {
+  sequence('clean',[ 'scripts', 'img', 'styles' ], 'pages', done);
+});
 
 //clean function: basically just deletes the dist dir
 gulp.task('clean', function(done) {
@@ -61,6 +62,13 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('dist/styles'));
 });
 
+//combine and copy scripts to dist
+gulp.task('scripts', function() {
+    gulp.src(PATHS.javascript)
+      .pipe(gulp.dest('dist/scripts/'));
+  });
+
+
 
 // Copy page templates into finished HTML files
 gulp.task('pages', function() {
@@ -81,3 +89,21 @@ gulp.task('pages', function() {
       .pipe(gulp.dest('dist'));
   });
   //end pages
+
+
+  // Start a server with LiveReload to preview the site in
+gulp.task('server', ['build'], function() {
+  browser.init({
+    server: 'dist', port: PORT
+  });
+});
+
+
+// Build the site, run the server, and watch for file changes
+gulp.task('default', ['build', 'server'], function() {
+  gulp.watch(['src/*.html'], ['pages:reset', browser.reload]);
+  gulp.watch(['src/assets/{layouts,partials}/**/*.html'], ['pages:reset', browser.reload]);
+  gulp.watch(['src/styles/**/*.scss'], [ 'styles', browser.reload]);
+  gulp.watch(['src/scripts/**/*.js'], ['scripts', browser.reload]);
+  gulp.watch(['src/assets/img/**/*'], ['img', browser.reload]);
+});
