@@ -4,6 +4,8 @@ var gulp = require('gulp');
 
 var rimraf = require('rimraf');
 
+var $ = require('gulp-load-plugins')();
+
 
 // Port to use for the development server.
 var PORT = 8000;
@@ -46,4 +48,13 @@ gulp.task('img', function() {
     'src/assets/img/**/*.jpg'
   ])
     .pipe(gulp.dest('dist/img/'));
+});
+
+
+gulp.task('styles', function() {
+  return gulp.src([
+    'src/styles/*.scss'
+  ])
+    .pipe($.sass().on('error', $.sass.logError))
+    .pipe(gulp.dest('dist/styles'));
 });
