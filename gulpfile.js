@@ -91,6 +91,12 @@ gulp.task('pages', function() {
   //end pages
 
 
+gulp.task('pages:reset', function(cb) {
+  panini.refresh();
+  gulp.run('pages');
+  cb();
+});
+
   // Start a server with LiveReload to preview the site in
 gulp.task('server', ['build'], function() {
   browser.init({
