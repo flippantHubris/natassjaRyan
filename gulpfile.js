@@ -39,3 +39,11 @@ gulp.task('fonts', function() {
   ])
     .pipe(gulp.dest('dist/fonts/'));
 });
+
+//transfer imgages to dist
+gulp.task('img', function() {
+  return gulp.src([
+    'src/assets/img/**/*.jpg'
+  ])
+    .pipe(gulp.dest('dist/img/'));
+});
