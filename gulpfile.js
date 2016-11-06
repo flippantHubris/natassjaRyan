@@ -5,9 +5,7 @@ var gulp = require('gulp');
 var rimraf = require('rimraf');
 var sequence = require('run-sequence');
 var browser  = require('browser-sync');
-
 var $ = require('gulp-load-plugins')();
-
 var panini = require('panini');
 
 
@@ -25,7 +23,6 @@ var PATHS = {
   ]
 
 };
-
 
 
 gulp.task('build', function(done) {
@@ -67,8 +64,6 @@ gulp.task('scripts', function() {
     gulp.src(PATHS.javascript)
       .pipe(gulp.dest('dist/scripts/'));
   });
-
-
 
 // Copy page templates into finished HTML files
 gulp.task('pages', function() {
