@@ -76,12 +76,12 @@ gulp.task('pages', function() {
 
   var injectOptions = {
     addRootSlash: false,
-    ignorePath: ['src', 'dist']
+    ignorePath: ['src', 'dist', 'assets', 'src/assests']
   };
 
-    gulp.src('src/*.html')
+    gulp.src('src/assets/pages/**/*.html')
       .pipe(panini({
-        root: 'src/',
+        root: 'src/assets/pages/',
         layouts: 'src/assets/layouts/',
         partials: 'src/assets/partials/',
       }))
