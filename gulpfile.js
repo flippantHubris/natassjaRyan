@@ -76,7 +76,7 @@ gulp.task('pages', function() {
 
   var injectOptions = {
     addRootSlash: false,
-    ignorePath: ['src', 'dist', 'assets', 'src/assests']
+    ignorePath: ['src', 'dist']
   };
 
     gulp.src('src/assets/pages/**/*.html')
