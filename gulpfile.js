@@ -1,7 +1,5 @@
 
-
 var gulp = require('gulp');
-
 var rimraf = require('rimraf');
 var sequence = require('run-sequence');
 var browser  = require('browser-sync');
@@ -103,7 +101,7 @@ gulp.task('server', ['build'], function() {
 // Build the site, run the server, and watch for file changes
 gulp.task('default', ['build', 'server'], function() {
   gulp.watch(['src/*.html'], ['pages:reset', browser.reload]);
-  gulp.watch(['src/assets/{layouts,partials}/**/*.html'], ['pages:reset', browser.reload]);
+  gulp.watch(['src/assets/{layouts,partials,pages}/**/*.html'], ['pages:reset', browser.reload]);
   gulp.watch(['src/styles/**/*.scss'], [ 'styles', browser.reload]);
   gulp.watch(['src/scripts/**/*.js'], ['scripts', browser.reload]);
   gulp.watch(['src/assets/img/**/*'], ['img', browser.reload]);
