@@ -6772,6 +6772,9 @@ nav {
  *
  * Made By MaterializeCSS.com
  */
+.gallery {
+  padding-top: 200px; }
+
 html {
   overflow: auto; }
 
