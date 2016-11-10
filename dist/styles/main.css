@@ -6580,7 +6580,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   background-color: #fafafa;
   padding: 0;
   max-height: 70%;
-  width: 55%;
+  width: 80%;
   margin: auto;
   overflow-y: auto;
   border-radius: 15px;
@@ -6643,6 +6643,35 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   max-height: 45%;
   border-radius: 0;
   will-change: bottom, opacity; }
+
+.gallery-card {
+  position: relative;
+  background-color: #26a69a;
+  border-radius: 15px;
+  padding: 0px; }
+  .gallery-card img {
+    border-radius: 15px 15px 0 0;
+    padding: 0px 0px 0px 0px; }
+  .gallery-card .card-bottom {
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    background-color: inherit;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    z-index: 2;
+    border-radius: 0 0 15px 15px; }
+    .gallery-card .card-bottom a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating) {
+      color: white;
+      margin-right: 15px;
+      transition: color .3s ease;
+      text-transform: uppercase; }
+      .gallery-card .card-bottom a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating):hover {
+        color: white; }
+    .gallery-card .card-bottom + .card-reveal {
+      z-index: 1;
+      padding-bottom: 64px; }
 
 nav {
   color: #fff;
@@ -6811,35 +6840,6 @@ html {
 
 .grow:hover, .gallery-card:hover {
   transform: scale(1.01); }
-
-.gallery-card {
-  position: relative;
-  background-color: #546e7a;
-  border-radius: 15px;
-  padding: 0px; }
-  .gallery-card img {
-    border-radius: 15px 15px 0 0;
-    padding: 0px 0px 0px 0px; }
-  .gallery-card .card-bottom {
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
-    font-size: 25px;
-    color: white;
-    position: relative;
-    background-color: inherit;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    z-index: 2;
-    border-radius: 0 0 15px 15px; }
-    .gallery-card .card-bottom a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating) {
-      color: white;
-      margin-right: 15px;
-      transition: color .3s ease;
-      text-transform: uppercase; }
-      .gallery-card .card-bottom a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating):hover {
-        color: white; }
-    .gallery-card .card-bottom + .card-reveal {
-      z-index: 1;
-      padding-bottom: 64px; }
 
 .list-inline {
   padding-left: 0;

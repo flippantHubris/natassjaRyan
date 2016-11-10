@@ -1,0 +1,45 @@
+.gallery-card {
+  position: relative;
+  background-color: color("teal", "lighten-1");
+  //transition: box-shadow .25s;
+  border-radius: 15px;
+  padding: 0px;
+  //@extend .z-depth-2;
+  @extend .my-hoverable;
+  @extend .grow;
+
+  img{
+    border-radius: 15px 15px 0 0;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .card-bottom {
+
+    @include script-font;
+    font-size: 25px;
+    color: white;
+
+    position: relative;
+    background-color: inherit;
+
+   padding-top: 5px;
+    padding-bottom: 10px;
+    z-index: 2;
+    border-radius: 0 0 $card-border-radius $card-border-radius;
+
+      a:not(.btn):not(.btn-large):not(.btn-floating) {
+      color: $card-link-color;
+      margin-right: $card-padding;
+      transition: color .3s ease;
+      text-transform: uppercase;
+
+      &:hover { color: $card-link-color-light; }
+    }
+
+    & + .card-reveal {
+      z-index: 1;
+      padding-bottom: 64px;
+    }
+  }
+
+}
