@@ -1,1 +1,3 @@
 add qr codes
+
+maybe add random hair clipping for background 
