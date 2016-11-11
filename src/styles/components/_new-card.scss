@@ -1,0 +1,8 @@
+
+
+@import '..materialize_sass/components/cards';
+
+
+.new-card{
+  @extend .card;
+}

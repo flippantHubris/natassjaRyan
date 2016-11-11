@@ -22,7 +22,7 @@ $social-buttons-hover-color: color("teal", "lighten-2");
 //   background-color: $card-bg-color;
 // }
 
-.my-card {
+.card {
   position: relative;
   margin: $element-top-margin 0 $element-bottom-margin 0;
   background-color: $card-bg-color;
@@ -33,7 +33,7 @@ $social-buttons-hover-color: color("teal", "lighten-2");
 
   .img-section{
       border-radius: $card-border-radius $card-border-radius 0 0;
-      background-color: color("teal", "lighten-4");
+      background-color: color("teal", "lighten-3");
   }
 
   .card-title {

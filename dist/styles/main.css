@@ -2068,7 +2068,7 @@ a {
 .z-depth-0 {
   box-shadow: none !important; }
 
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .make-appointment-button, .btn-floating, .dropdown-content, .collapsible, .side-nav, .my-card {
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .make-appointment-button, .btn-floating, .dropdown-content, .collapsible, .side-nav {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .z-depth-1-half, .btn:hover, .btn-large:hover, .make-appointment-button:hover, .btn-floating:hover {
@@ -4005,14 +4005,14 @@ button.btn-floating {
   .side-nav.fixed .collapsible-body li a {
     padding: 0 23.5px 0 31px; }
 
-.collapsible.popout {
+.popout.collapsible {
   border: none;
   box-shadow: none; }
-  .collapsible.popout > li {
+  .popout.collapsible > li {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     margin: 0 24px;
     transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-  .collapsible.popout > li.active {
+  .popout.collapsible > li.active {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     margin: 16px 0; }
 
@@ -6403,42 +6403,42 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
-.my-card {
+.card {
   position: relative;
   margin: 10px 0 10px 0;
   background-color: white;
   transition: box-shadow .25s;
   border-radius: 15px; }
-  .my-card .img-section {
+  .card .img-section {
     border-radius: 15px 15px 0 0;
-    background-color: #b2dfdb; }
-  .my-card .card-title {
+    background-color: #80cbc4; }
+  .card .card-title {
     font-size: 24px;
     font-weight: 300; }
-    .my-card .card-title.activator {
+    .card .card-title.activator {
       cursor: pointer; }
-  .my-card.small, .my-card.medium, .my-card.large {
+  .card.small, .card.medium, .card.large {
     position: relative; }
-    .my-card.small .card-image, .my-card.medium .card-image, .my-card.large .card-image {
+    .card.small .card-image, .card.medium .card-image, .card.large .card-image {
       max-height: 60%;
       overflow: hidden; }
-    .my-card.small .card-content, .my-card.medium .card-content, .my-card.large .card-content {
+    .card.small .card-content, .card.medium .card-content, .card.large .card-content {
       max-height: 40%;
       overflow: hidden; }
-    .my-card.small .card-action, .my-card.medium .card-action, .my-card.large .card-action {
+    .card.small .card-action, .card.medium .card-action, .card.large .card-action {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0; }
-  .my-card.small {
+  .card.small {
     height: 300px; }
-  .my-card.medium {
+  .card.medium {
     height: 400px; }
-  .my-card.large {
+  .card.large {
     height: 500px; }
-  .my-card .card-image {
+  .card .card-image {
     position: relative; }
-    .my-card .card-image img {
+    .card .card-image img {
       display: block;
       border-radius: 2px 2px 0 0;
       position: relative;
@@ -6447,13 +6447,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       top: 0;
       bottom: 0;
       width: 100%; }
-    .my-card .card-image .card-title {
+    .card .card-image .card-title {
       color: white;
       position: absolute;
       bottom: 0;
       left: 0;
       padding: 15px; }
-  .my-card ul.social-buttons li a {
+  .card ul.social-buttons li a {
     display: block;
     background-color: #546e7a;
     height: 40px;
@@ -6467,16 +6467,16 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     padding-bottom: 30px; }
-  .my-card ul.social-buttons li a:hover,
-  .my-card ul.social-buttons li a:focus,
-  .my-card ul.social-buttons li a:active {
+  .card ul.social-buttons li a:hover,
+  .card ul.social-buttons li a:focus,
+  .card ul.social-buttons li a:active {
     background-color: #4db6ac; }
-  .my-card .card-social li {
+  .card .card-social li {
     display: inline-block;
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 10px; }
-    .my-card .card-social li a {
+    .card .card-social li a {
       display: block;
       background-color: #546e7a;
       height: 40px;
@@ -6489,76 +6489,76 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       -webkit-transition: all .3s;
       -moz-transition: all .3s;
       transition: all .3s; }
-      .my-card .card-social li a i {
+      .card .card-social li a i {
         color: white; }
-      .my-card .card-social li a .my-twitter {
+      .card .card-social li a .my-twitter {
         padding-left: 3px;
         padding-top: 10px; }
-    .my-card .card-social li a:hover,
-    .my-card .card-social li a:focus,
-    .my-card .card-social li a:active,
-    .my-card .card-social li a.active {
+    .card .card-social li a:hover,
+    .card .card-social li a:focus,
+    .card .card-social li a:active,
+    .card .card-social li a.active {
       color: #4db6ac; }
-  .my-card .card-content {
+  .card .card-content {
     padding: 15px;
     border-radius: 15px; }
-    .my-card .card-content p {
+    .card .card-content p {
       margin: 0;
       color: inherit; }
-    .my-card .card-content .card-title {
+    .card .card-content .card-title {
       line-height: 48px; }
-  .my-card .card-bottom {
+  .card .card-bottom {
     position: relative;
     background-color: #b2dfdb;
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding-bottom: 1px;
     z-index: 2;
     border-radius: 0 0 15px 15px; }
-    .my-card .card-bottom a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating) {
+    .card .card-bottom a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating) {
       color: white;
       margin-right: 15px;
       transition: color .3s ease;
       text-transform: uppercase; }
-      .my-card .card-bottom a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating):hover {
+      .card .card-bottom a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating):hover {
         color: white; }
-    .my-card .card-bottom + .card-reveal {
+    .card .card-bottom + .card-reveal {
       z-index: 1;
       padding-bottom: 64px; }
-  .my-card .card-section {
+  .card .card-section {
     position: relative;
     background-color: #e0f2f1;
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 15px;
     z-index: 2;
     color: #455a64; }
-    .my-card .card-section a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating) {
+    .card .card-section a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating) {
       color: #01579b;
       margin-right: 15px;
       transition: color .3s ease;
       font-weight: bold; }
-      .my-card .card-section a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating):hover {
+      .card .card-section a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating):hover {
         color: white; }
-    .my-card .card-section + .card-reveal {
+    .card .card-section + .card-reveal {
       z-index: 1;
       padding-bottom: 64px; }
-  .my-card .card-action {
+  .card .card-action {
     position: relative;
     background-color: inherit;
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 15px;
     z-index: 2;
     border-radius: 0 0 15px 15px; }
-    .my-card .card-action a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating) {
+    .card .card-action a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating) {
       color: white;
       margin-right: 15px;
       transition: color .3s ease;
       text-transform: uppercase; }
-      .my-card .card-action a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating):hover {
+      .card .card-action a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating):hover {
         color: white; }
-    .my-card .card-action + .card-reveal {
+    .card .card-action + .card-reveal {
       z-index: 1;
       padding-bottom: 64px; }
-  .my-card .card-reveal {
+  .card .card-reveal {
     padding: 15px;
     position: absolute;
     background-color: white;
@@ -6568,7 +6568,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     height: 100%;
     z-index: 3;
     display: none; }
-    .my-card .card-reveal .card-title {
+    .card .card-reveal .card-title {
       cursor: pointer;
       display: block; }
 
@@ -6793,6 +6793,83 @@ nav {
     line-height: 64px; }
   .navbar-fixed {
     height: 64px; } }
+
+.collapsible {
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  margin: 10px 0 10px 0; }
+
+.collapsible-header {
+  display: block;
+  cursor: pointer;
+  min-height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd; }
+  .collapsible-header i {
+    width: 2rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-right: 1rem; }
+
+.collapsible-body {
+  display: none;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box; }
+  .collapsible-body p {
+    margin: 0;
+    padding: 2rem; }
+
+.side-nav .collapsible, .side-nav .collapsible,
+.side-nav.fixed .collapsible {
+  border: none;
+  box-shadow: none; }
+  .side-nav .collapsible li, .side-nav .collapsible li,
+  .side-nav.fixed .collapsible li {
+    padding: 0; }
+
+.side-nav .collapsible-header,
+.side-nav.fixed .collapsible-header {
+  background-color: transparent;
+  border: none;
+  line-height: inherit;
+  height: inherit;
+  padding: 0 16px; }
+  .side-nav .collapsible-header:hover,
+  .side-nav.fixed .collapsible-header:hover {
+    background-color: rgba(0, 0, 0, 0.05); }
+  .side-nav .collapsible-header i,
+  .side-nav.fixed .collapsible-header i {
+    line-height: inherit; }
+
+.side-nav .collapsible-body,
+.side-nav.fixed .collapsible-body {
+  border: 0;
+  background-color: #fff; }
+  .side-nav .collapsible-body li a,
+  .side-nav.fixed .collapsible-body li a {
+    padding: 0 23.5px 0 31px; }
+
+.popout.collapsible {
+  border: none;
+  box-shadow: none; }
+  .popout.collapsible > li {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin: 0 24px;
+    transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  .popout.collapsible > li.active {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    margin: 16px 0; }
+
+.collapsible {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: inherit; }
 
 /* Custom Stylesheet */
 /**

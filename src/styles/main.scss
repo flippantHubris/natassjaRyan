@@ -6,6 +6,23 @@
 @import 'components/gallery';
 @import 'materialize_sass/components/navbar';
 
+@import 'materialize_sass/components/collapsible';
+
+// @import 'materialize_sass/components/cards';
+//
+// .new-card{
+//   @include .card;
+// }
+
+.collapsible{
+  @extend .collapsible;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: inherit;
+
+}
+
+
 
 
 /* Custom Stylesheet */
